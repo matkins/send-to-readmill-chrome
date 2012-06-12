@@ -1,0 +1,29 @@
+{
+  "name" : "Send to Readmill",
+  "version" : "1.0",
+  "description" : "Adds 'Send to Readmill' links to ePUBs",
+  "background" : {
+    "scripts": ["background.js"]
+  },
+  "page_action" :
+  {
+    "default_icon" : "icon-19.png",
+    "default_title" : "Added Send to Readmill links to this page"
+  },
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js" : ["jquery-1.7.2.min.js","jquery.regex.js","contentscript.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
