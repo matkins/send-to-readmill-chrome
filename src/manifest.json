@@ -2,6 +2,7 @@
   "name" : "Send to Readmill",
   "version" : "1.0",
   "description" : "Adds 'Send to Readmill' links to ePUBs",
+  "update_url": "https://raw.github.com/matkins/send-to-readmill-chrome/master/updates.xml",
   "background" : {
     "scripts": ["background.js"]
   },
