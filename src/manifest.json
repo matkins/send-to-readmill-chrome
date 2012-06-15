@@ -3,14 +3,6 @@
   "version" : "1.0",
   "description" : "Adds 'Send to Readmill' links to ePUBs",
   "update_url": "https://raw.github.com/matkins/send-to-readmill-chrome/master/updates.xml",
-  "background" : {
-    "scripts": ["background.js"]
-  },
-  "page_action" :
-  {
-    "default_icon" : "icon-19.png",
-    "default_title" : "Added Send to Readmill links to this page"
-  },
   "content_scripts" : [
     {
       "matches" : [
