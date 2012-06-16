@@ -1,7 +1,7 @@
 // If Send to Readmill isn't already implemented
 if (typeof (Readmill) === "undefined") {
   // If there any links to ePUB files
-  var links = $('a:regex(href,\\.epub(\.|$))');
+  var links = $('a:regex(href,\\.epub([\\.\\?]|$))');
   if (links.length > 0) {
     // Add Send to Readmill anchors
     $(links).each(function (index, link) {
@@ -11,7 +11,10 @@ if (typeof (Readmill) === "undefined") {
         'data-download-url': link.href,
         'data-buy-url': window.location.href
       });
-      $(link).after(btn);
+      // Create wrapper div
+      var wrapper = $('<div />',{'class': 'send-to-readmill-wrapper'});
+      wrapper.html(btn)
+      $(link).after(wrapper);
     });
     // Load Send to Readmill script
     (function() {
