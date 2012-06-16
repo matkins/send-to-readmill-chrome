@@ -1,7 +1,7 @@
 // If Send to Readmill isn't already implemented
 if (typeof (Readmill) === "undefined") {
   // If there any links to ePUB files
-  var links = $('a:regex(href,\\.epub(\\W|$))');
+  var links = $('a:regex(href,\\.epub(\.|$))');
   if (links.length > 0) {
     // Add Send to Readmill anchors
     $(links).each(function (index, link) {
