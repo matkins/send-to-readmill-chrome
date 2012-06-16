@@ -1,15 +1,14 @@
+/*========== General ==========*/
+.send-to-readmill-wrapper {
+  margin-top:5px;
+}
 /*========== gutenberg.org ==========*/
 .files tr td .send-to-readmill-wrapper{
   display:inline-table;
   margin:-11px 0px -10px 10px;
   vertical-align:middle;
 }
-
 /*========== feedbooks.org ==========*/
-.large-cover-button .send-to-readmill-wrapper,
-.buy_button_block .send-to-readmill-wrapper{
-  margin-top:5px;
-}
 .book_buy_text .send-to-readmill-wrapper{
   display:none !important;
 }
