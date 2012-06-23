@@ -8,6 +8,9 @@
         "http://*/*",
         "https://*/*"
       ],
+      "exclude_matches" : [
+        "*://readmill.com/*"
+      ],
       "js" : ["jquery-1.7.2.min.js","jquery.regex.js","contentscript.js"],
       "css" : ["styles.css"],
       "run_at" : "document_idle",
