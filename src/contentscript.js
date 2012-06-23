@@ -9,7 +9,7 @@ if (typeof (Readmill) === "undefined") {
         'class': 'send-to-readmill',
         'data-display': 'small',
         'data-download-url': link.href,
-        'data-buy-url': window.location.href
+        'data-buy-url': link.href
       });
       // Create wrapper div
       var wrapper = $('<div />',{'class': 'send-to-readmill-wrapper'});
