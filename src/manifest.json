@@ -2,7 +2,6 @@
   "name" : "Send to Readmill",
   "version" : "1.1",
   "description" : "Adds 'Send to Readmill' buttons next to ePub download links on sites such as Project Gutenberg and Feedbooks.",
-  "update_url": "https://raw.github.com/matkins/send-to-readmill-chrome/master/updates.xml",
   "content_scripts" : [
     {
       "matches" : [

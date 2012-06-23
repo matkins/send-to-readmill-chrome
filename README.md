@@ -7,7 +7,7 @@ A Chrome extension that adds 'Send to Readmill' links to websites with links to 
 
 Install it
 ----------
-[Click here to install from the Chrome Webstore](https://chrome.google.com/webstore/detail/kfgkhngieflhjglodkmdfcechhfcmpcm)
+[Click here to install from the Chrome Webstore](https://chrome.google.com/webstore/search/Send%20to%20Readmill%20matkins)
 
 Then try it out
 ---------------
