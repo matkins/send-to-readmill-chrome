@@ -1,6 +1,6 @@
 {
   "name" : "Send to Readmill",
-  "version" : "1.1",
+  "version" : "1.2",
   "description" : "Adds 'Send to Readmill' buttons next to ePub download links on sites such as Project Gutenberg and Feedbooks.",
   "content_scripts" : [
     {
