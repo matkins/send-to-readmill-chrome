@@ -1,5 +1,5 @@
-// If Send to Readmill isn't already implemented
-if (typeof (Readmill) === "undefined") {
+// If Send to Readmill isn't already implemented)
+if (($('script[src="https://platform.readmill.com/send.js"]').length === 0) && (typeof (Readmill) !== "object")) {
   // Define function to create button
   function readmillButton(url){
     var btn = $('<div/>', {
