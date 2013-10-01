@@ -1,6 +1,6 @@
 //storage.remove('disabledFiletypes');
 $(document).ready(function(){
-  // Load stored options
+  // Load stored filetypes options
   storage.get({'disabledFiletypes':''}, function(items){
     var disabledFiletypes = items.disabledFiletypes.split(',');
     // Set checkboxes to reflect options
@@ -8,11 +8,11 @@ $(document).ready(function(){
       $('#detect_' + filetype).prop("checked", ($.inArray(filetype, disabledFiletypes) == -1));
     });
   });
-  // Bind to checkbox change event
-  $('input[type="checkbox"]').change(function(){
+  // Bind to filetypes checkbox change event
+  $('input[type="checkbox"].filetypes').change(function(){
     var filetype = $(this).attr('id').replace('detect_', '')
     storage.get({'disabledFiletypes': ''}, function(items){
-      var disabledFiletypes = items.disabledFiletypes.split(',');      
+      var disabledFiletypes = items.disabledFiletypes.split(',');
       var index = $.inArray(filetype, disabledFiletypes);
       if(index >= 0){
         // Was disabled
@@ -23,6 +23,15 @@ $(document).ready(function(){
       }
       storage.set({'disabledFiletypes': disabledFiletypes.join(',')}, function(){});
     });
+  });
 
+  storage.get({'pageActionEnabled':false}, function(obj){
+    // Set checkbox to reflect option
+    $('#pageaction_enabled')[0].checked = obj.pageActionEnabled;
+  });
+  // Bind to page action checkbox change event
+  console.log($('input[type="checkbox"].pageaction'))
+  $('input[type="checkbox"].pageaction').change(function(){
+    storage.set({'pageActionEnabled': this.checked }, function(){});
   });
 });
