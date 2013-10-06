@@ -2,6 +2,13 @@
   "name" : "Send to Readmill",
   "version" : "1.4.2",
   "description" : "Adds 'Send to Readmill' buttons next to ebook download links on sites such as Project Gutenberg and Feedbooks.",
+  "background" : {
+    "scripts" : ["background.js"]
+  },
+  "page_action" : {
+    "default_icon" : "icon-16.png",
+    "default_title" : "Show Send to Readmill button"
+  },
   "content_scripts" : [
     {
       "matches" : [
